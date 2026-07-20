@@ -3,8 +3,8 @@ import { PrismaClient, Prisma } from "../generated/prisma";
 const prisma = new PrismaClient();
 
 const usersData: Prisma.UserCreateInput[] = [
-  { login: "admin", password: "", isAdmin: true },
-  { login: "developer", password: "", isAdmin: false },
+  { login: "admin", password: "adminpassword", isAdmin: true },
+  { login: "developer", password: "developerpassword", isAdmin: false },
 ];
 
 const brandsData: Prisma.BrandCreateInput[] = [
