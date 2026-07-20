@@ -1,11 +1,5 @@
 # Сервер next.js
 
-## Инициализация
-
-1. установка зависимостей - `npm i`
-2. инициализация prisma - `npx prisma migrate dev --name init`
-3. наполнение данными - `npx prisma migrate reset`. Соглашаемся с очисткой данных
-
 ## API
 
 схема данных - `prisma/schema.prisma`
