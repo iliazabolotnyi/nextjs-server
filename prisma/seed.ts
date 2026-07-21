@@ -3,8 +3,8 @@ import { PrismaClient, Prisma } from "../generated/prisma";
 const prisma = new PrismaClient();
 
 const usersData: Prisma.UserCreateInput[] = [
-  { login: "admin", password: "adminpassword", isAdmin: true },
-  { login: "developer", password: "developerpassword", isAdmin: false },
+  { login: "admin", password: "admin", isAdmin: true },
+  { login: "developer", password: "developer", isAdmin: false },
 ];
 
 const brandsData: Prisma.BrandCreateInput[] = [
@@ -48,8 +48,8 @@ const productsData: Prisma.ProductCreateInput[] = [
     },
   },
   {
-    name: "Acer Predator Helios Neo 16S AI PHN16S-71-72PG",
-    model: "Acer Predator Helios Neo",
+    name: "Acer Helios 16S AI PHN16S-71-72PG",
+    model: "Acer Helios",
     imageUrl: "http://localhost:4000/Acer1.png",
     price: 180,
     type: "notebook",
@@ -91,7 +91,7 @@ const productsData: Prisma.ProductCreateInput[] = [
       "Ноутбук ACER SFA16–61M-R721 с 16 OLED-экраном создан для тех, кто ценит качество изображения и мобильность. Это устройство подходит для работы, учёбы и мультимедийных задач благодаря мощному процессору и большому объёму памяти.",
     brand: {
       connect: {
-        id: 2,
+        id: 1,
       },
     },
   },
@@ -155,13 +155,13 @@ const productsData: Prisma.ProductCreateInput[] = [
       "Ноутбук MSI Modern 15H (C1MG-008RU) в черном корпусе создан на базе нейронного 14-ядерного процессора Intel Core Ultra 5 и оснащен 16 ГБ оперативной памяти. Благодаря такой конфигурации устройство работает без зависаний при использовании ресурсоемких приложений, работе одновременно с несколькими программами и во время игрового процесса.",
     brand: {
       connect: {
-        id: 3,
+        id: 2,
       },
     },
   },
   {
-    name: "Gigabyte Gaming A18 GA83H",
-    model: "Gigabyte Gaming",
+    name: "GIGABYTE Gaming A18 GA83H",
+    model: "GIGABYTE GAMING",
     imageUrl: "http://localhost:4000/GIGABYTE3.png",
     price: 160,
     type: "notebook",

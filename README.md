@@ -1,12 +1,13 @@
 # Сервер next.js
 
+## Инициализация
+
+1. установка зависимостей - `npm i`
+2. инициализация prisma - `npx prisma migrate dev --name init`
+3. наполнение данными - `npx prisma migrate reset`
+4. `npm run dev` для запуска сервера на `http://localhost:4000`
+
 ## API
-
-схема данных - `prisma/schema.prisma`
-
-наполнение данными - `prisma/seed.ts`
-
-`npm run dev` для запуска сервера на `http://localhost:4000`
 
 ### POST /api/auth/login
 
@@ -52,3 +53,5 @@
 ### GET api/brands
 
 Топ 10 товаров
+
+[Сертификат](https://learn.javascript.ru/courses/nextjs-20250606/iliazabolotnyi/ru/certificate.jpg)
