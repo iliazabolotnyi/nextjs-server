@@ -10,7 +10,7 @@ const usersData: Prisma.UserCreateInput[] = [
 const brandsData: Prisma.BrandCreateInput[] = [
   { name: "ACER" },
   { name: "MSI" },
-  { name: "DELL" },
+  { name: "iRU" },
   { name: "GIGABYTE" },
 ];
 
@@ -96,15 +96,15 @@ const productsData: Prisma.ProductCreateInput[] = [
     },
   },
   {
-    name: "Dell Latitude 5550",
-    model: "Dell Latitude",
-    imageUrl: "http://localhost:4000/Dell1.png",
+    name: "iRU Planio 15ING, 15.6, IPS",
+    model: "iRU Planio",
+    imageUrl: "http://localhost:4000/Iru1.png",
     price: 106,
     type: "notebook",
     year: 2024,
     top10: true,
     description:
-      "Ноутбук Dell Latitude 5550 с процессором Intel Core i7 1355U и 16 ГБ оперативной памяти работает с задачами разной сложности, учебой и повседневным использованием благодаря продуманной комплектации и современным технологиям. Устройство работает под управлением Windows 11 Pro и оснащено экраном с диагональю 15.6 дюймов и разрешением 1920x1080.",
+      "Ноутбук iRU Planio 15ING с экраном 15.6\" оснащён IPS-матрицей с разрешением Full HD 1920×1080, которая создаёт чёткое и яркое изображение для работы и мультимедиа. Модель под управлением двухъядерного процессора Intel Celeron N4500 с базовой частотой 1.1 ГГц и турбоускорением до 2.8 ГГц подходит для повседневных задач и офисных приложений.",
     brand: {
       connect: {
         id: 3,
@@ -112,15 +112,15 @@ const productsData: Prisma.ProductCreateInput[] = [
     },
   },
   {
-    name: "Dell Latitude 7450",
-    model: "Dell Latitude",
-    imageUrl: "http://localhost:4000/Dell2.png",
+    name: "iRU Tactio 15PHR, 15.6",
+    model: "iRU Tactio",
+    imageUrl: "http://localhost:4000/Iru2.png",
     price: 130,
     type: "notebook",
     year: 2023,
     top10: true,
     description:
-      "Ноутбук Dell Latitude 7450 с 14\" экраном подходит для мобильной работы и учебы. Корпус из алюминия создаёт комфорт при переноске, а производительный процессор справляется с ресурсоёмкими задачами.",
+      "Ноутбук iRU Tactio 15PHR с экраном 15.6\" сочетает производительность и мобильность. Подойдёт для учебы, работы и мультимедийных задач благодаря процессору и экрану. Компактный и стильный, он впишется в повседневный ритм.",
     brand: {
       connect: {
         id: 3,
